@@ -12,7 +12,7 @@
 當按下輸入時，瀏覽器會發送一個包含「JavaScript」關鍵字的 request 給 Google server，當 Google server 收到 這個 request 後，
 會解析這個 request，發現裡面包含了要搜尋的關鍵字「JavaScript」，此時 Google server 就知道你想要查跟 「JavaScript」相關的資料，
 然後Google server 就用這個關鍵字去查找資料庫，將所有包含「JavaScript」關鍵字的資料都抓出來，
-資料抓出來之後將結果渲染，渲染完之後再把結果頁response丟回給瀏覽器，最後，使用者就會看到搜尋結果了。
+資料抓出來之後將結果response丟回給瀏覽器，最後瀏覽器再將結果渲染，使用者就會看到搜尋結果了。
 
 
 
