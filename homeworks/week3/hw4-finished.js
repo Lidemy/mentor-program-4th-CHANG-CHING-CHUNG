@@ -1,6 +1,5 @@
 function palindromes(str) {
   let newStr = str.replace(/[^a-z]/gi,"");
-  newStr = newStr.toLowerCase()
   let reversedStr = [];
   for(let i = newStr.length-1; i >= 0; i--) {
     reversedStr.push(newStr[i])
