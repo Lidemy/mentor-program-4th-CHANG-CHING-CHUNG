@@ -1,3 +1,7 @@
+// 這一題是參考了一個叫演算法筆記的網站，及Youtube影片才寫出來的，所以根本不能算是我解出來的QQ
+// 連結如下：
+// 演算法筆記-http://www.csie.ntnu.edu.tw/~u91029/KnapsackProblem.html#3
+// Youtube影片: Dynamic Programming 作者:CS Dojo-https://youtu.be/vYquumk4nWw
 /* eslint-disable linebreak-style */
 /* eslint-disable no-use-before-define */
 /* eslint-disable linebreak-style */
