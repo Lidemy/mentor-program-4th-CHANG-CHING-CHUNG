@@ -4,7 +4,6 @@
 // Youtube影片: Dynamic Programming 作者:CS Dojo-https://youtu.be/vYquumk4nWw
 /* eslint-disable linebreak-style */
 /* eslint-disable no-use-before-define */
-/* eslint-disable linebreak-style */
 const readline = require('readline');
 
 const rl = readline.createInterface({
