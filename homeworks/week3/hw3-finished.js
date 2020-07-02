@@ -1,25 +1,45 @@
-let arr = [5,1,2,3,4,5];
+const readline = require('readline');
 
-let totalNum = arr.shift();
+const rl = readline.createInterface({
+  input: process.stdin,
+});
 
-arr.forEach(num => {
-  Prime(num)
-})
+const lines = [];
 
-function Prime(n) {
-  if(isPrime(n)) {
-    console.log("Prime");
-  } else {
-    console.log("Composite");
+// 讀取到一行，先把這一行加進去 lines 陣列，最後再一起處理
+rl.on('line', (line) => {
+  // eslint-disable-next-line radix
+  lines.push(parseInt(line));
+});
+
+// 輸入結束，開始針對 lines 做處理
+rl.on('close', () => {
+  // eslint-disable-next-line no-use-before-define
+  solve(lines);
+});
+
+// 上面都不用管，只需要完成這個 function 就好，可以透過 lines[i] 拿取內容
+function solve(data) {
+  const totalNum = data.shift();
+
+
+  function isPrime(n) {
+    for (let i = 2; i < n; i += 1) {
+      if (n % i === 0) {
+        return false;
+      }
+    }
+    return n > 1;
   }
-}
-
-function isPrime(n) {
-  for(let i = 2; i < n; i++) {
-    if(n % i === 0) {
-     return false;
+  function prime(n) {
+    if (isPrime(n)) {
+      console.log('Prime');
+    } else {
+      console.log('Composite');
     }
   }
-  return n > 1;
-}
 
+  if (totalNum === data.length) {
+    data.forEach(num => prime(num));
+  }
+}
