@@ -8,3 +8,11 @@
 
 ## 假設你現在是個餐廳平台，需要提供 API 給別人串接並提供基本的 CRUD 功能，包括：回傳所有餐廳資料、回傳單一餐廳資料、刪除餐廳、新增餐廳、更改餐廳，你的 API 會長什麼樣子？請提供一份 API 文件。
 
+
+
+     說明 	      Method     	path   	             參數 	                 範例
+回傳所有餐廳資料　　GET      /restaurants      limit:限制回傳資料數量      /restaurants?limit=10
+回傳單一餐廳資料　　GET      /restaurants/:id         無                  /restaurants/5
+新增餐廳           POST     /restaurants        name:餐廳名稱            　　無
+刪除餐廳           DELETE   /restaurants/:id         無             　　　　 無
+更改餐廳           PATCH    /restaurants/:id    name:餐廳名稱              　無
