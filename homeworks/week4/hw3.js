@@ -7,7 +7,7 @@ function searchInformationOfCountry(countryName) {
   if (countryName !== undefined) {
     req.get(`https://restcountries.eu/rest/v2/name/${countryName}`, (err, res, body) => {
       try {
-        if (res.statusCode === 200) {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
           const countries = JSON.parse(body);
           countries.forEach((country) => {
             console.log('============');

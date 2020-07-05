@@ -10,7 +10,7 @@ function getStreams(options, callback) {
   req.get(options, callback);
 }
 
-function getTotalStreams(game = 'Just Chatting', total = 10, callback) {
+function getTotalStreams(game = 'Just Chatting', total = 100, callback) {
   let totalLimit = total;
   if (totalLimit > 100) {
     totalLimit = 100;
@@ -30,22 +30,27 @@ function getTotalStreams(game = 'Just Chatting', total = 10, callback) {
     if (err) {
       return callback(err);
     }
-
-    const data = JSON.parse(body);
-    totalStreams = totalStreams.concat(data.streams);
-    if (totalStreams.length < total) {
-      offset += 10;
-      options.url = `https://api.twitch.tv/kraken/streams/?game=${game}&limit=${totalLimit}&offset=${offset}`;
-      getStreams(options, processStreams);
-    } else {
-      callback(null, totalStreams);
+    if (res.statusCode >= 200 && res.statusCode < 300) {
+      try {
+        const data = JSON.parse(body);
+        totalStreams = totalStreams.concat(data.streams);
+        if (totalStreams.length < total) {
+          offset += 100;
+          options.url = `https://api.twitch.tv/kraken/streams/?game=${game}&limit=${totalLimit}&offset=${offset}`;
+          getStreams(options, processStreams);
+        } else {
+          callback(null, totalStreams);
+        }
+      } catch (e) {
+        console.log(e.message);
+      }
     }
   }
   getStreams(options, processStreams);
 }
 
 if (gameName !== undefined || totalLiveStreams !== undefined) {
-  getTotalStreams(gameName, totalLiveStreams, (err, streams) => {
+  getTotalStreams(gameName, 200, (err, streams) => {
     if (err) {
       console.log(err);
     }

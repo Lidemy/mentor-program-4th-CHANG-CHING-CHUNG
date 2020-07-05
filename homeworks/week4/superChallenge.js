@@ -12,7 +12,7 @@ function getLIst() {
     path: '/books?_limit=20',
   };
   http.get(options, (res) => {
-    if (res.statusCode === 200) {
+    if (res.statusCode >= 200 && res.statusCode < 300) {
       let rawData = '';
       res.on('data', data => rawData += data);
       res.on('end', () => {
@@ -38,7 +38,7 @@ function getOneBook(id) {
   };
 
   http.get(options, (res) => {
-    if (res.statusCode === 200) {
+    if (res.statusCode >= 200 && res.statusCode < 300) {
       try {
         let rawData = '';
         res.on('data', data => rawData += data);
@@ -67,7 +67,7 @@ function deleteOneBook(id) {
   };
 
   const req = http.request(options, (res) => {
-    if (res.statusCode === 200) {
+    if (res.statusCode >= 200 && res.statusCode < 300) {
       console.log('The book has been deleted successfully');
     } else {
       console.log('Sorry, something went wrong');
@@ -92,7 +92,7 @@ function addOneBook(title) {
 
   const req = http.request(options, (res) => {
     console.log(res.statusCode);
-    if (res.statusCode === 201) {
+    if (res.statusCode >= 200 && res.statusCode < 300) {
       console.log(`The book ${title} has been added successfully`);
     } else {
       console.log('Sorry, something went wrong');
@@ -117,7 +117,7 @@ function updataBook(id, title) {
   };
   const req = http.request(options, (res) => {
     console.log(res.statusCode);
-    if (res.statusCode === 200) {
+    if (res.statusCode >= 200 && res.statusCode < 300) {
       console.log(`The book ${title} has been updated successfully`);
     } else {
       console.log('Sorry, something went wrong');

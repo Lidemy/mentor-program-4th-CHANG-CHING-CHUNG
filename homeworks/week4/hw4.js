@@ -20,7 +20,7 @@ class Twitch {
   getTopGameVierwers() {
     req.get(this.options, (err, res, body) => {
       try {
-        if (res.statusCode === 200) {
+        if (res.statusCode >= 200 && res.statusCode < 300) {
           const response = JSON.parse(body);
           const topGames = response.top;
           topGames.forEach((game) => {
