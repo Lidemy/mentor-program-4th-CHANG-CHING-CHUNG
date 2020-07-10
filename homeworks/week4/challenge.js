@@ -54,7 +54,7 @@ if (gameName !== undefined || totalLiveStreams !== undefined) {
     if (err) {
       console.log(err);
     }
-    streams.sort((a, b) => b.viewers - a.viewers);
+    // streams.sort((a, b) => b.viewers - a.viewers);
     for (let i = 0; i < streams.length; i++) {
       // eslint-disable-next-line no-underscore-dangle
       console.log(`名稱: ${streams[i].channel.display_name}, ID: ${streams[i].channel._id} 當前觀眾人數: ${streams[i].viewers}`);
