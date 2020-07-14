@@ -268,3 +268,68 @@ footer {
   background-color: #35564b;
   padding: 15px 0;
 }
+
+#game-a {
+  background: url("./imgs/games-bn.png") no-repeat center center/cover;
+  width: 100%;
+  min-height: 767px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-a .bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+#game-a .bonus ul {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+#game-a .bonus ul li {
+  border-bottom: solid 1px #cdcdcd;
+  padding-bottom: 25px;
+  padding-top: 1rem;
+  display: flex;
+  color: #322929;
+  line-height: 1.63;
+}
+
+#game-a .bonus h2 {
+  padding-top: 40px;
+  font-size: 24px;
+  color: #5ec1b6;
+  text-align: center;
+}
+
+#game-a .bonus span {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #322929;
+  min-width: 100px;
+  margin-right: 5px;
+}
+
+#game-a .bonus a {
+  min-width: 400px;
+  height: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e62a45;
+  font-size: 20px;
+}

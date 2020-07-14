@@ -171,4 +171,11 @@
   footer {
     font-size: 16px;
   }
+
+  #game-a .bonus {
+    width: 350px;
+  }
+  #game-a .bonus a {
+    min-width: 0;
+  }
 }
