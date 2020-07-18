@@ -14,6 +14,7 @@
   #main-nav ul li {
     margin-left: 0;
     margin-top: 5px;
+    margin-left: 5px;
   }
 
   #header-home .header-content {
@@ -190,5 +191,46 @@
   }
   #game-a .bonus a {
     min-width: 0;
+  }
+}
+
+@media (max-height: 1000px) {
+  #main-nav {
+    padding: 20px 20px;
+    align-items: center;
+  }
+
+  #main-nav ul li {
+    margin-left: 12px;
+  }
+  #header-home .header-content {
+    height: 310px;
+  }
+
+  #home-b .dishes {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #home-b .dishes img {
+    width: 50%;
+    min-height: 100%;
+  }
+  #home-c .comments {
+    flex-direction: column;
+  }
+
+  #home-c .comments .comment {
+    margin-bottom: 100px;
+  }
+  #home-c .comments .comment:last-child {
+    margin-bottom: 0;
+  }
+
+  #home-d iframe {
+    width: 900px;
+    height: 350px;
   }
 }
