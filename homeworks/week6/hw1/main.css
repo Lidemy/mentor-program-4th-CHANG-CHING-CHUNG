@@ -6,7 +6,7 @@
 
 body {
   font-size: 16px;
-  font-family: Microsoft JhengHei;
+  font-family: "Microsoft JhengHei";
   background-color: #ffffff;
 }
 
@@ -43,6 +43,14 @@ button {
   overflow: hidden;
 }
 
+.active {
+  background-color: #ff7286;
+  border-radius: 8px;
+}
+.active a {
+  color: #ffffff;
+}
+
 #main-nav {
   display: flex;
   justify-content: space-between;
@@ -65,20 +73,24 @@ button {
 }
 
 #main-nav ul li {
-  padding: 0 36px 0 36px;
   font-size: 18px;
   color: #010101;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  margin-left: 36px;
   white-space: nowrap;
-}
-
-#main-nav ul li:first-child {
-  background-color: #ff7286;
   border-radius: 8px;
+  transition: background 0.2s;
 }
 
-#main-nav li:first-child a {
+#main-nav ul li a {
+  padding: 12px 24px;
+  display: block;
+}
+
+#main-nav ul li:hover {
+  background-color: #ff7286;
+}
+
+#main-nav ul li:hover a {
   color: #ffffff;
 }
 
