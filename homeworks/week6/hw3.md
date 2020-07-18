@@ -32,7 +32,7 @@
 
 答:
 盒模型的意思是，html 的每個元素都是一個方塊，像盒子一樣的模型，所以被當做是盒子，我們透過對每個元素的盒模型進行操縱，使元素的大小外觀符合我們想要的樣式。
-例如: 我們可以對一個 div 元素去調整 color、width、height 及 font-size 等等。
+例如: 我們可以對一個 div 元素去調整 color、width、height 及 font-size 等等，其中比較重要的一點是 "box-sizing"，盒模型的寬高預設是 content-box，意思是，寬高不含 margins、padding 及 borders，這會導致如果設了 margins 等屬性會改變設定的寬度及高度，例如 width 設 100，padding 設 10，加起來寬度會變成 120，就偏離了我們想要該元素維持的寬度，所以如今我們會將 "box-sizing"這個屬性改成 border-box ，使總寬高維持在我們想要的寬高值，例如，我們設 width 為 100，padding 設 10，因為設了 border-box 的關係，因此瀏覽器會自動幫我們把 padding 加進去但維持總寬度為 100，這樣當我們在設計元素的時候就不容易亂，可以很好的掌控元素的寬高。
 
 ## 請問 display: inline, block 跟 inline-block 的差別是什麼？
 
