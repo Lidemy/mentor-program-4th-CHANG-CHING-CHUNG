@@ -246,9 +246,9 @@ a.active {
 }
 
 #home-d .map {
+  width: 100%;
   margin: auto;
-  padding-top: 43px;
-  padding-bottom: 36px;
+  padding: 2rem;
 }
 
 #home-e {

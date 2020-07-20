@@ -57,11 +57,6 @@
     padding-top: 15px;
   }
 
-  #home-d iframe {
-    width: 700px;
-    height: 350px;
-  }
-
   #home-e {
     flex-direction: column;
     align-items: center;
@@ -114,12 +109,6 @@
     max-width: 400px;
     padding: 6rem 1rem;
   }
-
-  #home-d iframe {
-    min-width: 665px;
-
-    height: 350px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -168,10 +157,6 @@
   #home-c .comment div {
     width: 100%;
     min-height: 250px;
-  }
-
-  #home-d iframe {
-    width: 400px;
   }
 
   #home-e {
@@ -227,10 +212,5 @@
   }
   #home-c .comments .comment:last-child {
     margin-bottom: 0;
-  }
-
-  #home-d iframe {
-    width: 900px;
-    height: 350px;
   }
 }
