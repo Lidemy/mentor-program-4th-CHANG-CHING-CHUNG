@@ -47,7 +47,7 @@ button {
   background-color: #ff7286;
   border-radius: 8px;
 }
-.active a {
+a.active {
   color: #ffffff;
 }
 
