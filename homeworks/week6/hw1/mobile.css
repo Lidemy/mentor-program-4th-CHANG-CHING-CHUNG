@@ -194,7 +194,7 @@
   }
 }
 
-@media (min-height: 768px) and (min-width: 1024px) {
+@media (max-height: 768px) and (max-width: 1024px) {
   #main-nav {
     padding: 20px 20px;
     align-items: center;
