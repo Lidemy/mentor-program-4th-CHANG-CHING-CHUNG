@@ -12,9 +12,11 @@
   }
 
   #main-nav ul li {
-    margin-left: 0;
     margin-top: 5px;
-    margin-left: 5px;
+  }
+
+  #main-nav ul li + li {
+    margin-left: 0px;
   }
 
   #header-home .header-content {
@@ -91,8 +93,8 @@
 }
 
 @media (max-height: 500px) {
-  #main-nav ul li {
-    margin-left: 10px;
+  #main-nav ul li + li {
+    margin-left: 0px;
   }
   #header-home .header-content {
     height: 230px;
@@ -185,8 +187,8 @@
     align-items: center;
   }
 
-  #main-nav ul li {
-    margin-left: 12px;
+  #main-nav ul li + li {
+    margin-left: 0px;
   }
   #header-home .header-content {
     height: 310px;

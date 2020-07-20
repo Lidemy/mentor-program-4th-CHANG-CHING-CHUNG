@@ -75,10 +75,13 @@ a.active {
 #main-nav ul li {
   font-size: 18px;
   color: #010101;
-  margin-left: 36px;
+  /* margin-left: 36px; */
   white-space: nowrap;
   border-radius: 8px;
   transition: background 0.2s;
+}
+#main-nav ul li + li {
+  margin-left: 36px;
 }
 
 #main-nav ul li a {
