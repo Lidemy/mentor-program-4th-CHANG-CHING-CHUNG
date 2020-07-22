@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: -1.8px;
+  color: #000000;
+}
+
+.btn {
+  font-size: 15px;
+  color: #000000;
+  padding: 10px 31px;
+  background-color: #fad312;
+  border-radius: 3px;
+  margin-bottom: 21px;
+  display: inline-block;
+  height: 40px;
+  width: 92px;
+}
+
+.error {
+  color: red;
+}
+
+.container {
+  background-color: #f3f3f3;
+  padding: 121px 0 0 0;
+}
+
+.form-container {
+  max-width: 645px;
+  height: 1085px;
+  margin: auto;
+  background-color: #ffffff;
+  box-shadow: 1.8px 2.4px 5px 0 rgba(0, 0, 0, 0.3);
+  padding: 3rem 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  border-top: 6px solid #fad312;
+  margin-bottom: 66px;
+}
+
+footer {
+  color: #999999;
+  text-align: center;
+  height: 60px;
+  background-color: #000000;
+  font-family: "Microsoft JhengHei";
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container h1 {
+  margin-bottom: 35px;
+}
+
+.form-container p {
+  margin-bottom: 8px;
+}
+
+.form-container span {
+  color: #e74149;
+}
+
+.form-container .form-group span {
+  font-size: 20px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form + div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.form-container p + span {
+  margin-bottom: 55px;
+  margin-top: 14px;
+  font-size: 16px;
+}
+
+.form-container form .title {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.form-container .form-group {
+  display: flex;
+  flex-direction: column;
+  width: 287px;
+  height: 65px;
+  margin-bottom: 49px;
+}
+
+.form-container .radio-wrapper {
+  display: flex;
+}
+
+.form-container .radio-wrapper label.radio {
+  margin-left: 8px;
+  padding-top: 2px;
+}
+
+.form-container .radio-wrapper input[type="radio"] {
+  background-color: #bababa;
+}
+
+.form-container .form-group input {
+  border: solid 1px #d0d0d0;
+  font-size: 16px;
+  height: 23px;
+}
+
+.form-container .form-group input::placeholder {
+  color: #afafaf;
+  font-family: "Microsoft JhengHei";
+}
+
+.form-container form .radio {
+  display: inline;
+}
+
+.form-container .form-group .suggestion {
+  color: #000000;
+  font-size: 14px;
+  display: block;
+  margin-top: 6px;
+}
+
+.form-container form + div p {
+  margin-bottom: 35px;
+}
