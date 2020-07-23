@@ -56,12 +56,16 @@ a.active {
   justify-content: space-between;
   padding-left: 96px;
   padding-right: 121px;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 #main-nav ul {
   display: flex;
+}
+
+#main-nav h1 {
+  align-self: center;
 }
 
 .logo {
@@ -95,6 +99,10 @@ a.active {
 
 #main-nav ul li:hover a {
   color: #ffffff;
+}
+
+#header-home {
+  box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
 }
 
 #header-home .header-content {
@@ -347,4 +355,50 @@ footer {
   color: #ffffff;
   background-color: #e62a45;
   font-size: 20px;
+}
+
+#faq-container {
+  max-width: 758px;
+  margin: auto;
+  padding: 75px 0 40px 0;
+}
+
+#faq-container .faq-lists {
+  margin-top: 60px;
+}
+
+#faq-container .faq-lists li {
+  border-bottom: solid 1px #70b282;
+  margin-bottom: 30px;
+  display: flex;
+  height: 50px;
+  overflow: hidden;
+  transition: height ease-in-out 0.8s;
+}
+
+#faq-container .faq-lists li:last-child {
+  margin-bottom: 0;
+}
+
+#faq-container .faq-lists span {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Questrial";
+  letter-spacing: 0.22px;
+  color: #70b282;
+  margin-right: 16px;
+}
+
+#faq-container .faq-lists .questions {
+  letter-spacing: 0.16px;
+}
+
+#faq-container .faq-lists .questions .faq-title:first-child {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#faq-container .faq-lists .questions .faq-body:last-child {
+  line-height: 2;
+  padding-bottom: 30px;
 }
