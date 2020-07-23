@@ -117,6 +117,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  function cancelCheckState(checkBox) {
+    if (checkBox.classList.contains('check')) {
+      checkBox.checked = false;
+      checkBox.nextElementSibling.classList.toggle('strikethrough');
+    }
+  }
+
   function editTask(e) {
     if (e.target.classList.contains('edit-item')) {
       // eslint-disable-next-line prefer-const
@@ -124,6 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.target.classList.add('editing');
       const text = e.target.parentElement.previousElementSibling.lastElementChild.textContent;
       const parent = e.target.parentElement.previousElementSibling;
+      cancelCheckState(parent.firstElementChild);
       const child = e.target.parentElement.previousElementSibling.lastElementChild;
       child.remove();
       const newChild = document.createElement('input');
@@ -141,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       const newText = e.target.parentElement.previousElementSibling.lastElementChild.value;
       const parent = e.target.parentElement.previousElementSibling;
+
       const child = e.target.parentElement.previousElementSibling.lastElementChild;
       child.remove();
       const newChild = document.createElement('div');
