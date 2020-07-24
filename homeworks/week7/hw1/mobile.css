@@ -21,4 +21,8 @@
   .form-container .form-group:nth-child(4) {
     margin-bottom: 40px;
   }
+
+  .btn {
+    margin-top: 15px;
+  }
 }

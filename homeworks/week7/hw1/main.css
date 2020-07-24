@@ -27,14 +27,16 @@ h1 {
 
 .btn {
   font-size: 15px;
-  color: #000000;
+  color: #fff;
   padding: 10px 31px;
-  background-color: #fad312;
+  background-color: #4caf50;
   border-radius: 3px;
   margin-bottom: 21px;
   display: inline-block;
   height: 40px;
   width: 92px;
+  border: none;
+  cursor: pointer;
 }
 
 .error {
