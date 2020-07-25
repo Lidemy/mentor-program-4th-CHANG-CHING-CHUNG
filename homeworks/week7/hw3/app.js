@@ -111,8 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function clearAllTasks() {
     const lists = Array.from(document.getElementsByClassName('list'));
-    const tasks = getTasksFromLocalStorage();
-    tasks.length = 0;
+    const tasks = [];
     localStorage.setItem('tasks', JSON.stringify(tasks));
     lists.forEach((list) => {
       list.remove();
