@@ -28,7 +28,7 @@ function error(inputField, inpuType) {
 }
 function inputValidation() {
   const mailRG = /^.+@[a-z]+\.[a-z]+(\.[a-z]+)?$/i;
-  const phoneRG = /^[0-9]{10}$/;
+  const phoneRG = /^(09)[0-9]{8}$/;
   let invalid = false;
   if (inputName.value === '') {
     invalid = true;
