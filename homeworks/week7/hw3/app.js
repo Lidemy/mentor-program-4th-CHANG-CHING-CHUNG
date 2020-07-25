@@ -87,8 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function deleteTask(e) {
     if (e.target.classList.contains('delete-item')) {
       if (confirm('確定要刪除嗎?')) {
-        e.target.parentElement.parentElement.remove();
-        removeTaskFromLocalStorage(e.target.parentElement.parentElement.firstElementChild.lastElementChild);
+        const list = e.target.parentElement.parentElement;
+        list.remove();
+        const listText = e.target.parentElement.parentElement.firstElementChild.lastElementChild;
+        removeTaskFromLocalStorage(listText);
       }
     }
   }
