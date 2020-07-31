@@ -188,11 +188,11 @@
     min-width: 0;
   }
 
-  #lottery .lottery_wrapper .text {
+  .lottery .lottery_wrapper .text {
     font-size: 26px;
   }
 
-  #lottery .lottery_wrapper .lottery_btn {
+  .lottery .lottery_wrapper .lottery_btn {
     padding: 18px 100px;
   }
 }
