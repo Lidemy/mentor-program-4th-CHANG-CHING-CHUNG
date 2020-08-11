@@ -68,13 +68,45 @@ function init() {
     }
   }
 
+  let clicked = false;
+
+
   loginBtn.addEventListener('click', (e)=> {
+    if (clicked === false) {
+      clicked = true;
+    } else if (clicked === true) {
+      e.preventDefault();
+      setTimeout(()=> {
+        clicked = false;
+      },3000);
+    }
+    const atMsgPage = document.querySelector(".board__type-comment-title");
     const war = document.querySelectorAll('span.warning');
     war.forEach((w) => {
       w.remove();
     })
-    warning(e)
+    if (!atMsgPage) {
+      warning(e)
+    } else {
+      const typeArea = document.querySelector(".type-comment").value;
+      const typeAreaBox = document.querySelector(".type-comment");
+      if(!typeArea) {
+        e.preventDefault();
+        const commentForm = document.querySelector('.board__type-comment');
+        const span = document.createElement('span');
+        span.classList.add('warning');
+        span.innerText = '內容不得為空!';
+        commentForm.insertBefore(span,typeAreaBox);
+      }
+      const s = document.querySelector('span.warning');
+      if(s) {
+        setInterval(()=> {
+          s.remove();
+        },3000); 
+      }
+    }
   });
+
   assignAvatarIMG()
   clearErrMsg();
   checkSpace();

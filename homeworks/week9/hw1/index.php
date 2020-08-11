@@ -10,6 +10,7 @@ if (!empty($_SESSION['nickname']) && !empty($_SESSION['username'])) {
 }
 
 $sql = "SELECT nickname, content, created_at from John_comments ORDER by id desc";
+// $sql = "SELECT nickname, content, created_at from comments ORDER by id desc";
 
 $result = $conn->query($sql);
 
@@ -87,6 +88,14 @@ if (!$result) {
           <span class="board__type-comment-title">
             Hi~! <span class="username"><?php echo htmlspecialchars($nickname)?></span> 留下你想說的話
           </span>
+          <?php
+           if (!empty($_GET['errCode'])) {
+             $code = $_GET['errCode'];
+             if ($code === '1') {
+               echo '<span class="warning">內容不得為空!</span>';
+             }
+           }
+           ?>
           <textarea
             name="comment"
             class="type-comment"

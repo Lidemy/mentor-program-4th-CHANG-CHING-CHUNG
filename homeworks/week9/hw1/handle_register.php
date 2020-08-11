@@ -16,6 +16,7 @@ if (!empty($_POST['nickname']) && !empty($_POST['username'] && !empty($_POST['pa
 }
 
 $sql = "INSERT INTO John_users (nickname, username, password) VALUE(?, ?, ?)";
+// $sql = "INSERT INTO users (nickname, username, password) VALUE(?, ?, ?)";
 
 
 if ($stmt = $conn->prepare($sql)) {

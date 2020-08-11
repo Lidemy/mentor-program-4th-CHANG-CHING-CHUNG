@@ -13,6 +13,7 @@ if (!empty($_SESSION['nickname']) && !empty($_POST['comment'])) {
 }
 
 $sql = "INSERT INTO John_comments (nickname, content) VALUE(?, ?)";
+// $sql = "INSERT INTO comments (nickname, content) VALUE(?, ?)";
 
 
 if ($stmt = $conn->prepare($sql)) {
