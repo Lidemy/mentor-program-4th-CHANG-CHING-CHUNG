@@ -1,27 +1,39 @@
 <?php
-  require_once('./conn.php');
-  if (empty($_POST['nickname']) || empty($_POST['username']) || empty($_POST['password'])) {
-    header('Location: register.php?errCode=1');
-    die('請檢查資料');
-  }
-  
+require_once('./conn.php');
+session_start();
+
+$nickname;
+$username;
+$password;
+if (!empty($_POST['nickname']) && !empty($_POST['username'] && !empty($_POST['password']))) {
   $nickname = $_POST['nickname'];
   $username = $_POST['username'];
   $password = $_POST['password'];
-  
-  
-  $sql = "INSERT INTO John_users(nickname, username, password) VALUES('$nickname', '$username', '$password')";
 
-  $result = $conn->query($sql);
-  
-  if ($result) {
-    header('Location: ./index.php');
-  } else {
-    $code = $conn->errno;
+} else {
+  header("Location: register.php?errCode=3");
+  die("請檢查資料");
+}
+
+$sql = "INSERT INTO John_users (nickname, username, password) VALUE(?, ?, ?)";
+
+
+if ($stmt = $conn->prepare($sql)) {
+  $stmt->bind_param("sss",$nickname,$username,$password);
+  $stmt->execute();
+
+  if ($stmt->errno) {
+    $code = $stmt->errno;
     if ($code === 1062) {
       header("Location: register.php?errCode=2");
+      die("Failed" . $stmt->error);
     }
-    die($conn->error);
   }
+  $stmt->close();
+  header("Location: ./index.php");
+} else {
+  header("Location: register.php?errCode=3");
+  die("請檢查資料");
+}
 
 ?>
