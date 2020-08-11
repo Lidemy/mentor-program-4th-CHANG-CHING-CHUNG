@@ -170,6 +170,7 @@ a.login-btn {
   width: 50%;
   position: relative;
   word-break: break-word;
+  white-space: pre-line;
 }
 
 .board__user-comment p:after {
