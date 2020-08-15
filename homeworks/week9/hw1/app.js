@@ -34,13 +34,13 @@ function init() {
     const nickname = document.querySelector('.nick');
     const user = document.querySelector('.user');
     const password = document.querySelector('.password');
-    function check(e) {
-      e.target.value = e.target.value.replace(/ /g, '');
-    }
     if (nickname) {
       nickname.addEventListener('input', (e) => {
         e.target.value = e.target.value.replace(/^ /, '');
       });
+    }
+    function check(e) {
+      e.target.value = e.target.value.replace(/ /g, '');
     }
     if (user && password) {
       user.addEventListener('input', check);
