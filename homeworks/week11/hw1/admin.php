@@ -1,5 +1,6 @@
 <?php
 require_once('./conn.php');
+require_once('./utilis.php');
 session_start();
 
 $username;
@@ -32,6 +33,13 @@ if ($stmt = $conn->prepare($sql)) {
     die($conn->error);
 }
 
+$all_role = getAllRole();
+$all_role = $all_role->fetch_all(MYSQLI_ASSOC);
+$all_role_arr = array();
+foreach($all_role as $role) {
+  array_push($all_role_arr,$role);
+}
+
 $page = 1;
 if (!empty($_GET['page'])) {
   $page = (int)$_GET['page'];
@@ -42,14 +50,13 @@ $items_per_page = 10;
 $offset = ($page-1) * $items_per_page;
 
 // $sql = "SELECT id, nickname, username, created_at, role FROM users ORDER BY id ASC LIMIT 10 OFFSET ?";
-$sql = "SELECT id, nickname, username, created_at, role FROM John_users ORDER BY id ASC LIMIT 10 OFFSET ?";
+$sql = "SELECT U.id as id, U.nickname as nickname, U.username as username, U.created_at as created_at, U.role as role,R.chinese_role_name as chinese_role_name FROM John_users as U left join John_roles as R ON U.role = R.role_name ORDER BY U.id ASC LIMIT 10 OFFSET ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $offset);
 if (!$stmt->execute()) {
   die('Error'. $conn->error);
 }
-$stmt->bind_result($id,$nickname,$username,$createdAt,$role);
-
+$stmt->bind_result($id,$nickname,$username,$createdAt,$role, $chinese_role_name);
 ?>
 
 <!DOCTYPE html>
@@ -98,32 +105,22 @@ $stmt->bind_result($id,$nickname,$username,$createdAt,$role);
               <th>身份權限</th>
             </tr>
             <tr>
-              <td><?php echo $id?></td>
-              <td><?php echo $nickname?></td>
-              <td><?php echo $username?></td>
-              <td><?php echo $createdAt?></td>
+              <td><?php echo htmlspecialchars($id);?></td>
+              <td><?php echo htmlspecialchars($nickname);?></td>
+              <td><?php echo htmlspecialchars($username);?></td>
+              <td><?php echo htmlspecialchars($createdAt);?></td>
               <td class="flex">
-                  <?php
-                    $currentRole;
-                    if($role === "normal") {
-                      $currentRole = "一般使用者";
-                    } else if ($role === "admin") {
-                      $currentRole = "管理員";
-                    } else if ($role === "suspended") {
-                      $currentRole = "遭停權使用者";
-                    }
-                  ?>
                   <div class="current-role">
-                  當前身份: <?php echo $currentRole?>
+                  當前身份: <?php echo $chinese_role_name?>
                   </div>
                   <div class="btn-box">
                   <form action="handle_update_role.php" method="POST">
                   <select name="role" class="select-container">
-                    <option value="normal">一般使用者</option>
-                    <option value="admin">管理員</option>
-                    <option value="suspended">遭停權使用者</option>
+                  <?php for($i = 0; $i <count($all_role_arr); $i+=1) {?>
+                    <option value=<?php echo $all_role_arr[$i]['role_name']?>><?php echo $all_role_arr[$i]['chinese_role_name']?></option>
+                  <?php }?>
                   </select>
-                    <input type="hidden" name="username" value=<?php echo $username?>>
+                    <input type="hidden" name="username" value=<?php echo htmlspecialchars($username);?>>
                     <button class="admin-btn">送出</button>
                   </form>
                   </div>
