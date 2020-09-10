@@ -435,6 +435,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 繼續看 [BE101] 用 PHP 與 MySQL 學習後端基礎的其他部分，看到「真正的實戰：留言板 - 再次修正問題篇」結束就好，有時間的話也可以把整堂課都看完。
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。
 
@@ -443,6 +444,11 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。
 
 >>>>>>> 183edc71eaadd742a03b8b19e4c4e0c700e46252
+=======
+
+也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。
+
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 想知道更多資安相關的概念，可以參考：[程式導師實驗計畫第二期：Week6-2：資訊安全](https://www.youtube.com/watch?v=HGjjxKsCgr0) （有時間再看）
 
 有一個與資安相關的東西叫做 CSRF，在課程中沒有講，是考驗你自學能力的時候，推薦閱讀這篇：[讓我們來談談 CSRF](https://blog.techbridge.cc/2017/02/25/csrf-introduction/)
@@ -500,7 +506,10 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 4. Webpack
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 主要是想讓大家稍微知道這些工具的使用而已，在之後的課程裡面不一定會實際用到。
 
 除了這個以外，也會幫大家額外補充一些重要的概念，像是：
@@ -508,8 +517,12 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 1. 什麼是 Promise？
 2. 什麼是 Fetch？
 
+<<<<<<< HEAD
 >>>>>>> 183edc71eaadd742a03b8b19e4c4e0c700e46252
 在 CSS 的部分呢，也會補充兩個小主題：
+=======
+在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 1. CSS Selector 權重的計算方式
 2. CSS Sprites 與 Data URI
@@ -529,7 +542,17 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。
 
+<<<<<<< HEAD
 其他的補充如下：（連結待補）
+=======
+其他的補充如下：
+
+1. [Fetch 與 Promise 補充系列（一）：初探 Fetch](https://youtu.be/_8cLWMAQe3A)
+2. [Fetch 與 Promise 補充系列（二）：fetch 的 POST 與錯誤處理](https://youtu.be/Ovv9tPhiW_0)
+3. [Fetch 與 Promise 補充系列（三）：fetch 的使用注意事項](https://youtu.be/5A9ogWY7J7w)
+4. [Fetch 與 Promise 補充系列（四）：淺談 Promise](https://youtu.be/w-gnunN1Ra4)
+5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU) 
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 [HW13 作業連結](/homeworks/week13)
 
@@ -569,7 +592,11 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 2. [一小時完成 VPS (Virtual Private Server) 部署](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/21)
 3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)
 
+<<<<<<< HEAD
 接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究。可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
+=======
+接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究，可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 然後看看[程式導師實驗計畫第二期：Week8-1 後端基礎（下）](https://www.youtube.com/watch?v=QiCm9JE43KM)來學習什麼是 View、Stored Procedure 與 Trigger（這影片前半段是以前 Todo list 作業的檢討，可以跳過）。
 
@@ -617,18 +644,30 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 這次的第一個重點在於物件導向，之前都沒有時間好好講過，這一週特別講一下物件導向。
 
+<<<<<<< HEAD
 再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制。
 
 第一個重點是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
 
 第二個重點就是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
+=======
+再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制，這邊有兩個地方要特別注意。
+
+第一個是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
+
+第二個是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 #### 指定教材
 
 1. [JS201] 進階 JavaScript：那些你一直搞不懂的地方
 2. [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
+<<<<<<< HEAD
 如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk)
+=======
+如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk) （內容有很多應該都該 JS201 類似，所以有時間再看就好，沒看也沒關係）
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 [HW16 作業連結](/homeworks/week16)
 
@@ -651,9 +690,21 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 有了之前 PHP 以及 JS 的基礎，我相信學習 Express 會快速許多，因此在這一週裡面可以試試看能不能快速上手 Express 並完成作業。
 
+<<<<<<< HEAD
 #### 指定教材：
 
 1. [BE201] Express 與 Sequelize：「ORM 與 Sequelize」單元前所有內容
+=======
+除了 Express 以外，這一週還要介紹一個新的東西：ORM（Object Relational Mapping），簡單來說就是把一個程式碼裡面的物件跟資料庫的物件做映射（mapping），優點就是當你操作程式裡的物件時，就會改到資料庫裡的資料。
+
+而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
+
+最後會把這週的專案部署到免費的空間 [Heroku](https://www.heroku.com/)
+
+#### 指定教材：
+
+1. [BE201] Express 與 Sequelize：看到「ORM 與 Sequelize」結束
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 [HW17 作業連結](/homeworks/week17)
 
@@ -661,6 +712,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 - [ ] P1 學習如何使用 Express 及其相關套件
 - [ ] P1 我理解為什麼會需要框架
+<<<<<<< HEAD
 
 ### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
 
@@ -675,17 +727,48 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 #### 指定教材
 
 [BE201] Express 與 Sequelize 全部看完
+=======
+- [ ] P1 了解什麼是 ORM
+- [ ] P1 了解 ORM 的優缺點
+- [ ] P1 了解什麼是 N+1 problem 
+- [ ] P1 我知道如何部署 Node.js 應用程式到 heroku
+
+### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
+
+上一週我們已經把基礎的 Express + Sequelize 都搞定了，這一週就是延續上一週的基礎，開始幫餐廳網站加上訂單相關的功能。
+
+這週一樣會提供一步步帶著做的教學，讓大家跟著我一起把餐廳網站最後一塊拼圖拼起來。不過如果你想挑戰自己，可以先試著不要看教學，試著自己做出來看看。
+
+這一週要完成的功能如下：
+
+1. 身為一個使用者，我想要輸入訂單編號並且查詢訂單狀態
+2. 身為一個管理員，我想要在後台看到所有訂單
+3. 身為一個管理員，我想要在後台能夠改變訂單的狀態
+
+上周教了怎麼把專案部署到 Heroku，而這週會使用 Nginx + PM2 來部署我們寫好的 Web Application。
+
+#### 指定教材
+
+1. [BE201] Express 與 Sequelize 全部看完
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 [HW18 作業連結](/homeworks/week18)
 
 #### 自我檢測
 
+<<<<<<< HEAD
 - [ ] P1 了解什麼是 ORM
 - [ ] P1 了解 ORM 的優缺點
 - [ ] P1 了解什麼是 N+1 problem 
 - [ ] P1 我知道如何使用 Nginx
 - [ ] P1 我知道如何使用 PM2
 - [ ] P1 我知道如何部署 Node.js 應用程式
+=======
+- [ ] P1 我能夠從頭把一個網站獨立建起來
+- [ ] P1 我知道如何部署 Node.js 的網站到自己的主機
+- [ ] P2 我知道如何使用 Nginx
+- [ ] P2 我知道如何使用 PM2
+>>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 ### 第十九週（10/19 ~ 10/25）：產品開發流程
 

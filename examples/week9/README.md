@@ -1,6 +1,20 @@
 # Week9 作業自我檢討
 
-### 注意，本週沒有做檢討，因此以下內容是參考解答，還沒寫完請不要看喔！
+## 關於驗證
+
+以前我們在寫 JS 的時候有寫過表單驗證，這週 PHP 我們從後端來進行一些資料的驗證，這兩種到底差在哪邊呢？
+
+關於驗證欄位的方式，仔細想想你會發現其實真的必備的只有一個，其他都是增進使用者體驗。
+
+必備的是 PHP 後端那邊的驗證。
+
+為什麼呢？假設只有前端驗證，是沒有用的，仔細想想第四週的內容，就算前端有驗證，我還是可以直接寫一個 node.js 程式發送資料給 PHP，依舊可以傳壞掉的資料。
+
+因此，後端的驗證是必備的，才能真正防止不合法的資料寫進資料庫。
+
+前端只是為了增進使用者體驗，不用去到後端發現錯誤才回來，而是在前端 submit 時就能夠找到錯誤並顯示出來。所以要多少驗證，端看你想要達成怎樣的使用者體驗。
+
+### 注意，以下內容是參考解答，還沒寫完請不要看喔！
 
 .  
 .  
@@ -8,12 +22,12 @@
 .  
 .  
 .  
-.   
 .  
 .  
 .  
 .  
 .  
+.
 
 ## 資料庫欄位型態 VARCHAR 跟 TEXT 的差別是什麼
 
@@ -67,21 +81,21 @@ Cookie 的內容可不可以被偽造？當然可以，這也是我想帶什麼�
 
 你產生的通行證 ID 就是 session id，你在 users_certificate 這個 table 放的資料就是 session data。
 
-那 $_SESSION 又是什麼？跟 session 有什麼關係？
+那 \$\_SESSION 又是什麼？跟 session 有什麼關係？
 
 在回答這個之前，先問你一個問題：
 
-> cookie 跟 $_COOKIE 有什麼關係？
+> cookie 跟 \$\_COOKIE 有什麼關係？
 
-Cookie 是瀏覽器存資料的地方，它是一個 browser 跟 server 交換資料的機制。而 $_COOKIE 是 PHP 要用來操作 cookie 時的語法。
+Cookie 是瀏覽器存資料的地方，它是一個 browser 跟 server 交換資料的機制。而 \$\_COOKIE 是 PHP 要用來操作 cookie 時的語法。
 
 session 也是一樣的。
 
-Session 就是通行證機制，可以在 server 端存放資料，在 client 端只透過 session id 來驗證身份；而 $_SESSION 是 PHP 用來操作 session 時的語法。
+Session 就是通行證機制，可以在 server 端存放資料，在 client 端只透過 session id 來驗證身份；而 \$\_SESSION 是 PHP 用來操作 session 時的語法。
 
 session 只是個機制，就像是投票那樣。但它本身不會規定投票要怎麼投。你可以每個人發紙條寫要投誰；你可以線上電子投票；你可以在想投的箱子放一個球，這些都叫做投票。
 
-session 也是一樣的，這個機制也能有很多不同的實作方式，你可以像我們一樣自己用 users_certificate 這個 table 來實作，也可以用 PHP 內建的 $_SESSION 來實作，這些都叫做 session，只是實作方法不同。
+session 也是一樣的，這個機制也能有很多不同的實作方式，你可以像我們一樣自己用 users_certificate 這個 table 來實作，也可以用 PHP 內建的 \$\_SESSION 來實作，這些都叫做 session，只是實作方法不同。
 
 更多細節可以參考 Session 與 Cookie 三部曲：
 
