@@ -35,7 +35,8 @@ $(document).ready(() => {
   function displayComments() {
     const commentBoxDiv = document.querySelector('.comment-box');
     const dataoffset = offset;
-    $.get(`http://localhost/v1-week12-board/api/comments.php?offset=${dataoffset}`, (result) => {
+    const url = `${window.location}api/comments.php`;
+    $.get(`${url}?offset=${dataoffset}`, (result) => {
       if (result.length != 0) {
         result.forEach((comment) => {
           const div = document.createElement('div');
@@ -67,7 +68,8 @@ $(document).ready(() => {
       nickname,
       content,
     };
-    $.post('http://localhost/v1-week12-board/api/add_comment.php', data)
+    const url = window.location;
+    $.post(`${url}api/add_comment.php`, data)
       .always(() => {
         const Rbtn = $('.more');
         if (!Rbtn.length) {

@@ -5,8 +5,12 @@
     function addcomment($nickname,$content) {
       global $conn;
   
-      $sql = "INSERT INTO comments (nickname, content) VALUES ('$nickname', '$content')";
-      if (mysqli_query($conn, $sql) === TRUE) {
+      $sql = "INSERT INTO John_comments (nickname, content) VALUES (?, ?)";
+      // $sql = "INSERT INTO comments (nickname, content) VALUES ('$nickname', '$content')";
+      $stmt = mysqli_prepare($conn, $sql);
+      mysqli_stmt_bind_param($stmt, "ss", $nickname, $content);
+
+      if (mysqli_execute($stmt) === TRUE) {
         echo "新增成功";
       } else {
         echo "發生錯誤";
