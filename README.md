@@ -9,6 +9,7 @@
 ## 課程目標
 
 ### 核心能力
+
 1. 具有找資料的能力，能夠知道如何找到相關資訊
 2. 具有分析問題的能力，能夠快速定位問題
 3. 知道如何解決問題，包括但不限於拆解問題、簡化問題、轉化問題
@@ -41,27 +42,27 @@
 #### Objective 客觀
 
 關於今天的課程，你記得什麼？  
-完成了什麼？  
+完成了什麼？
 
 #### Reflective 感受
 
 你要如何形容今天的情緒  
 今天的高峰是什麼?  
-今天的低點是什麼?  
+今天的低點是什麼?
 
 #### Interpretive 解釋反思
 
 我們今天學到了什麼？  
-今天一個重要的領悟是什麼？  
+今天一個重要的領悟是什麼？
 
 #### Decisional 決定行動
 
 我們會如何用一句話形容今天的工作？  
-有哪些工作需要明天繼續努力?  
+有哪些工作需要明天繼續努力?
 
 有了基本架構之後會容易很多，你只要根據提供的問題模板去思考就行了。
 
-細節可參考：[初探 ORID 焦點討論法](https://blog.niclin.tw/2016/08/09/%E5%88%9D%E6%8E%A2-orid-%E7%84%A6%E9%BB%9E%E8%A8%8E%E8%AB%96%E6%B3%95/)、[如何使用ORID总结学习，加快进步？](https://www.jianshu.com/p/56e5bf8ae9ee)
+細節可參考：[初探 ORID 焦點討論法](https://blog.niclin.tw/2016/08/09/%E5%88%9D%E6%8E%A2-orid-%E7%84%A6%E9%BB%9E%E8%A8%8E%E8%AB%96%E6%B3%95/)、[如何使用 ORID 总结学习，加快进步？](https://www.jianshu.com/p/56e5bf8ae9ee)
 
 ### 3. 交作業前先檢查
 
@@ -97,7 +98,7 @@
 
 ## 課程大綱
 
-從 2020/06/12 至 2020/12/12	，為期六個月的課程，一共約二十六週。每週的開始為禮拜一，結束為禮拜日。
+從 2020/06/12 至 2020/12/12 ，為期六個月的課程，一共約二十六週。每週的開始為禮拜一，結束為禮拜日。
 
 ### 第零週：心態培養
 
@@ -340,7 +341,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 - [ ] P1 你知道捕獲與冒泡是什麼
 - [ ] P1 你知道什麼是事件代理（delegation）
 - [ ] P2 你知道怎麼用 JavaScript 更改元素的 style
-- [ ] P2 你知道 preventDefault 與 stopPropagation 的差異 
+- [ ] P2 你知道 preventDefault 與 stopPropagation 的差異
 
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
 
@@ -380,8 +381,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 1. [白話 Session 與 Cookie：從經營雜貨店開始](https://medium.com/@hulitw/session-and-cookie-15e47ed838bc)
 2. [淺談 Session 與 Cookie：一起來讀 RFC](https://blog.huli.tw/2019/08/09/session-and-cookie-part2/)
-3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)  
-
+3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)
 
 [HW9 作業連結](/homeworks/week9)
 
@@ -431,24 +431,12 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 因此這一週會繼續以留言板當作主軸，介紹非常非常重要的資訊安全相關概念。一段寫不好的程式碼，有可能就跟大門破了一個洞一樣，很輕易地就可以讓攻擊者入侵，不費吹灰之力。資訊安全真的要好好學，至少要知道原理以及防禦方法。
 
-####  指定教材
+#### 指定教材
 
 繼續看 [BE101] 用 PHP 與 MySQL 學習後端基礎的其他部分，看到「真正的實戰：留言板 - 再次修正問題篇」結束就好，有時間的話也可以把整堂課都看完。
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。
 
-=======
-
-也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。
-
->>>>>>> 183edc71eaadd742a03b8b19e4c4e0c700e46252
-=======
-
-也可以看 [CS101] 初心者的計概與 coding 火球術：4-3、5-4 複習一下資訊安全相關的觀念。
-
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 想知道更多資安相關的概念，可以參考：[程式導師實驗計畫第二期：Week6-2：資訊安全](https://www.youtube.com/watch?v=HGjjxKsCgr0) （有時間再看）
 
 有一個與資安相關的東西叫做 CSRF，在課程中沒有講，是考驗你自學能力的時候，推薦閱讀這篇：[讓我們來談談 CSRF](https://blog.techbridge.cc/2017/02/25/csrf-introduction/)
@@ -505,11 +493,6 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 3. Gulp
 4. Webpack
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 主要是想讓大家稍微知道這些工具的使用而已，在之後的課程裡面不一定會實際用到。
 
 除了這個以外，也會幫大家額外補充一些重要的概念，像是：
@@ -517,12 +500,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 1. 什麼是 Promise？
 2. 什麼是 Fetch？
 
-<<<<<<< HEAD
->>>>>>> 183edc71eaadd742a03b8b19e4c4e0c700e46252
-在 CSS 的部分呢，也會補充兩個小主題：
-=======
 在 CSS 的部分呢，也會補充兩個小主題（影片製作中）：
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 1. CSS Selector 權重的計算方式
 2. CSS Sprites 與 Data URI
@@ -542,17 +520,13 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 課程中提到 loader 時有提到 Regular Expression，可以參考：[簡易 Regular Expression 入門指南](https://blog.huli.tw/2020/05/16/introduction-to-regular-expression/)。
 
-<<<<<<< HEAD
-其他的補充如下：（連結待補）
-=======
 其他的補充如下：
 
 1. [Fetch 與 Promise 補充系列（一）：初探 Fetch](https://youtu.be/_8cLWMAQe3A)
 2. [Fetch 與 Promise 補充系列（二）：fetch 的 POST 與錯誤處理](https://youtu.be/Ovv9tPhiW_0)
 3. [Fetch 與 Promise 補充系列（三）：fetch 的使用注意事項](https://youtu.be/5A9ogWY7J7w)
 4. [Fetch 與 Promise 補充系列（四）：淺談 Promise](https://youtu.be/w-gnunN1Ra4)
-5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU) 
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
+5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU)
 
 [HW13 作業連結](/homeworks/week13)
 
@@ -576,7 +550,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 也會讓大家購買自己的網域，理解如何將網域以及主機串連起來，讓大家可以連線到你的網站。
 
-這週也要特別感謝 [gandi](https://www.gandi.net/) 連續四期全額贊助了網域的費用 <(_ _)>。
+這週也要特別感謝 [gandi](https://www.gandi.net/) 連續四期全額贊助了網域的費用 <(\_ \_)>。
 
 第四期學生請找助教索取網域的折扣碼（每人限一個），可以用來註冊 .tw 的域名。
 
@@ -592,11 +566,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 2. [一小時完成 VPS (Virtual Private Server) 部署](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/21)
 3. [如何遠端連接虛擬主機上的 mySQL 資料庫 ？](https://github.com/Lidemy/mentor-program-2nd-futianshen/issues/33)
 
-<<<<<<< HEAD
-接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究。可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
-=======
 接著有關於專有名詞的部分，只要稍微聽過有個印象就好了，暫時不需要深入研究，可以看[程式導師實驗計畫：Lesson 8-2 之資料庫](https://www.youtube.com/watch?v=iDG8Ha2uZPs)來學習什麼是 NoSQL、transaction、ACID 與 Lock。
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 然後看看[程式導師實驗計畫第二期：Week8-1 後端基礎（下）](https://www.youtube.com/watch?v=QiCm9JE43KM)來學習什麼是 View、Stored Procedure 與 Trigger（這影片前半段是以前 Todo list 作業的檢討，可以跳過）。
 
@@ -644,30 +614,17 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 這次的第一個重點在於物件導向，之前都沒有時間好好講過，這一週特別講一下物件導向。
 
-<<<<<<< HEAD
-再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制。
-
-第一個重點是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
-
-第二個重點就是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
-=======
 再來是 JavaScript 的一些重要基礎以及瀏覽器運作時的機制，這邊有兩個地方要特別注意。
 
 第一個是瀏覽器在運行 JavaScript 時的 Event Loop 機制。
 
 第二個是 JavaScript 的一些重要基礎，包含：scope、hoisting、closure、prototype、this 等等。
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 #### 指定教材
 
 1. [JS201] 進階 JavaScript：那些你一直搞不懂的地方
 2. [What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk)
-=======
-=======
 可以搭配其他我寫的文章一起閱讀：
 
 1. [該來理解 JavaScript 的原型鍊了](https://blog.huli.tw/2017/08/27/the-javascripts-prototype-chain/)
@@ -678,9 +635,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 6. [JavaScript 中的同步與非同步（上）：先成為 callback 大師吧！](https://blog.huli.tw/2019/10/04/javascript-async-sync-and-callback/)
 7. [覺得 JavaScript function 很有趣的我是不是很奇怪](https://blog.huli.tw/2020/04/18/javascript-function-is-awesome/)
 
->>>>>>> b08bfb6f0cefb38f65fe79914c331e60dc7c3795
 如果你不排斥比較長的影片，也可以看這個：[程式導師實驗計畫第二期：Week9-2 JavaScript 執行原理](https://youtu.be/3s69FPDZGRk) （內容有很多應該都該 JS201 類似，所以有時間再看就好，沒看也沒關係）
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 [HW16 作業連結](/homeworks/week16)
 
@@ -703,11 +658,6 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 有了之前 PHP 以及 JS 的基礎，我相信學習 Express 會快速許多，因此在這一週裡面可以試試看能不能快速上手 Express 並完成作業。
 
-<<<<<<< HEAD
-#### 指定教材：
-
-1. [BE201] Express 與 Sequelize：「ORM 與 Sequelize」單元前所有內容
-=======
 除了 Express 以外，這一週還要介紹一個新的東西：ORM（Object Relational Mapping），簡單來說就是把一個程式碼裡面的物件跟資料庫的物件做映射（mapping），優點就是當你操作程式裡的物件時，就會改到資料庫裡的資料。
 
 而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
@@ -717,7 +667,6 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 #### 指定教材：
 
 1. [BE201] Express 與 Sequelize：看到「ORM 與 Sequelize」結束
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 [HW17 作業連結](/homeworks/week17)
 
@@ -725,25 +674,9 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 - [ ] P1 學習如何使用 Express 及其相關套件
 - [ ] P1 我理解為什麼會需要框架
-<<<<<<< HEAD
-
-### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
-
-上一週我們學會了 Express，對基本的操作都已經很熟悉了。
-
-這一週要介紹的是一個新的東西：ORM（Object Relational Mapping），簡單來說就是把一個程式碼裡面的物件跟資料庫的物件做映射，優點就是當你操作程式裡的物件時，就會改到資料庫裡的資料。
-
-而且你幾乎不需要寫任何 SQL Query，因為 ORM 都會幫你處理的好好的，你只要學習怎麼用就可以了。這一週會使用 Sequelize 這個套件來做 ORM 以及串接資料庫，讓你體驗看看不用寫 SQL Query 的爽快感。
-
-最後會使用 Nginx + PM2 來部署我們之前寫好的 Web Application。
-
-#### 指定教材
-
-[BE201] Express 與 Sequelize 全部看完
-=======
 - [ ] P1 了解什麼是 ORM
 - [ ] P1 了解 ORM 的優缺點
-- [ ] P1 了解什麼是 N+1 problem 
+- [ ] P1 了解什麼是 N+1 problem
 - [ ] P1 我知道如何部署 Node.js 應用程式到 heroku
 
 ### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
@@ -763,25 +696,15 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 #### 指定教材
 
 1. [BE201] Express 與 Sequelize 全部看完
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 [HW18 作業連結](/homeworks/week18)
 
 #### 自我檢測
 
-<<<<<<< HEAD
-- [ ] P1 了解什麼是 ORM
-- [ ] P1 了解 ORM 的優缺點
-- [ ] P1 了解什麼是 N+1 problem 
-- [ ] P1 我知道如何使用 Nginx
-- [ ] P1 我知道如何使用 PM2
-- [ ] P1 我知道如何部署 Node.js 應用程式
-=======
 - [ ] P1 我能夠從頭把一個網站獨立建起來
 - [ ] P1 我知道如何部署 Node.js 的網站到自己的主機
 - [ ] P2 我知道如何使用 Nginx
 - [ ] P2 我知道如何使用 PM2
->>>>>>> 88173652e75d1c9dea1dacedd0723491f16570cb
 
 ### 第十九週（10/19 ~ 10/25）：產品開發流程
 
@@ -833,7 +756,6 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 4. [官方教學](https://reactjs.org/tutorial/tutorial.html)
 5. [React.js 小書](http://huziketang.mangojuice.top/books/react/)
 
-
 [HW21 作業連結](/homeworks/week21/fe)
 
 #### 自我檢測
@@ -862,7 +784,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 #### 自我檢測
 
 - [ ] 我熟悉 React 的基本使用
-- [ ] 我知道如何使用 React Router 
+- [ ] 我知道如何使用 React Router
 - [ ] 我了解 React Router 的目的
 - [ ] 我知道什麼是 Single Page Application
 - [ ] 我理解現在的前端與以往的差別
@@ -905,7 +827,6 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 ### 第二十五週（11/30 ~ 12/06）：Final Project
 
 ### 第二十六週（12/07 ~ 12/13）：Final Project
-
 
 # Final Project
 
