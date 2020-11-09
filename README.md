@@ -9,7 +9,6 @@
 ## 課程目標
 
 ### 核心能力
-
 1. 具有找資料的能力，能夠知道如何找到相關資訊
 2. 具有分析問題的能力，能夠快速定位問題
 3. 知道如何解決問題，包括但不限於拆解問題、簡化問題、轉化問題
@@ -42,27 +41,27 @@
 #### Objective 客觀
 
 關於今天的課程，你記得什麼？  
-完成了什麼？
+完成了什麼？  
 
 #### Reflective 感受
 
 你要如何形容今天的情緒  
 今天的高峰是什麼?  
-今天的低點是什麼?
+今天的低點是什麼?  
 
 #### Interpretive 解釋反思
 
 我們今天學到了什麼？  
-今天一個重要的領悟是什麼？
+今天一個重要的領悟是什麼？  
 
 #### Decisional 決定行動
 
 我們會如何用一句話形容今天的工作？  
-有哪些工作需要明天繼續努力?
+有哪些工作需要明天繼續努力?  
 
 有了基本架構之後會容易很多，你只要根據提供的問題模板去思考就行了。
 
-細節可參考：[初探 ORID 焦點討論法](https://blog.niclin.tw/2016/08/09/%E5%88%9D%E6%8E%A2-orid-%E7%84%A6%E9%BB%9E%E8%A8%8E%E8%AB%96%E6%B3%95/)、[如何使用 ORID 总结学习，加快进步？](https://www.jianshu.com/p/56e5bf8ae9ee)
+細節可參考：[初探 ORID 焦點討論法](https://blog.niclin.tw/2016/08/09/%E5%88%9D%E6%8E%A2-orid-%E7%84%A6%E9%BB%9E%E8%A8%8E%E8%AB%96%E6%B3%95/)、[如何使用ORID总结学习，加快进步？](https://www.jianshu.com/p/56e5bf8ae9ee)
 
 ### 3. 交作業前先檢查
 
@@ -98,7 +97,7 @@
 
 ## 課程大綱
 
-從 2020/06/12 至 2020/12/12 ，為期六個月的課程，一共約二十六週。每週的開始為禮拜一，結束為禮拜日。
+從 2020/06/12 至 2020/12/12	，為期六個月的課程，一共約二十六週。每週的開始為禮拜一，結束為禮拜日。
 
 ### 第零週：心態培養
 
@@ -341,7 +340,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 - [ ] P1 你知道捕獲與冒泡是什麼
 - [ ] P1 你知道什麼是事件代理（delegation）
 - [ ] P2 你知道怎麼用 JavaScript 更改元素的 style
-- [ ] P2 你知道 preventDefault 與 stopPropagation 的差異
+- [ ] P2 你知道 preventDefault 與 stopPropagation 的差異 
 
 ### 第八週（08/03 ~ 08/09）：前端基礎串 API
 
@@ -381,7 +380,8 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 1. [白話 Session 與 Cookie：從經營雜貨店開始](https://medium.com/@hulitw/session-and-cookie-15e47ed838bc)
 2. [淺談 Session 與 Cookie：一起來讀 RFC](https://blog.huli.tw/2019/08/09/session-and-cookie-part2/)
-3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)
+3. [深入 Session 與 Cookie：Express、PHP 與 Rails 的實作](https://blog.huli.tw/2019/08/09/session-and-cookie-part3/)  
+
 
 [HW9 作業連結](/homeworks/week9)
 
@@ -431,7 +431,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 因此這一週會繼續以留言板當作主軸，介紹非常非常重要的資訊安全相關概念。一段寫不好的程式碼，有可能就跟大門破了一個洞一樣，很輕易地就可以讓攻擊者入侵，不費吹灰之力。資訊安全真的要好好學，至少要知道原理以及防禦方法。
 
-#### 指定教材
+####  指定教材
 
 繼續看 [BE101] 用 PHP 與 MySQL 學習後端基礎的其他部分，看到「真正的實戰：留言板 - 再次修正問題篇」結束就好，有時間的話也可以把整堂課都看完。
 
@@ -526,7 +526,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 2. [Fetch 與 Promise 補充系列（二）：fetch 的 POST 與錯誤處理](https://youtu.be/Ovv9tPhiW_0)
 3. [Fetch 與 Promise 補充系列（三）：fetch 的使用注意事項](https://youtu.be/5A9ogWY7J7w)
 4. [Fetch 與 Promise 補充系列（四）：淺談 Promise](https://youtu.be/w-gnunN1Ra4)
-5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU)
+5. [Fetch 與 Promise 補充系列（五）：async 與 await](https://youtu.be/OEWoF9zzGAU) 
 
 [HW13 作業連結](/homeworks/week13)
 
@@ -550,7 +550,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 
 也會讓大家購買自己的網域，理解如何將網域以及主機串連起來，讓大家可以連線到你的網站。
 
-這週也要特別感謝 [gandi](https://www.gandi.net/) 連續四期全額贊助了網域的費用 <(\_ \_)>。
+這週也要特別感謝 [gandi](https://www.gandi.net/) 連續四期全額贊助了網域的費用 <(_ _)>。
 
 第四期學生請找助教索取網域的折扣碼（每人限一個），可以用來註冊 .tw 的域名。
 
@@ -684,7 +684,7 @@ HTML 的部分會簡單介紹幾個常見的 tag，以及 head 的一些屬性�
 - [ ] P1 我理解為什麼會需要框架
 - [ ] P1 了解什麼是 ORM
 - [ ] P1 了解 ORM 的優缺點
-- [ ] P1 了解什麼是 N+1 problem
+- [ ] P1 了解什麼是 N+1 problem 
 - [ ] P1 我知道如何部署 Node.js 應用程式到 heroku
 
 ### 第十八週（10/12 ~ 10/18）：現代後端開發（下）
@@ -774,11 +774,6 @@ React 在 2019 年 2 月推出 v16.8 這個版本，做了一個很大的改動�
 
 如果課程看不懂，可以額外參考：[從 Hooks 開始，讓你的網頁 React 起來](https://ithelp.ithome.com.tw/users/20103315/ironman/2668?page=1)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-[HW21 作業連結](/homeworks/week21/fe)
-=======
-=======
 #### class component 學習資源
 
 1. [FE301] React 基礎（Class component 版）：全部
@@ -786,10 +781,8 @@ React 在 2019 年 2 月推出 v16.8 這個版本，做了一個很大的改動�
 3. [React.js 小書](http://huziketang.mangojuice.top/books/react/)
 
 延伸閱讀：[React 性能優化大挑戰：一次理解 Immutable data 跟 shouldComponentUpdate](https://blog.techbridge.cc/2018/01/05/react-render-optimization/)
->>>>>>> ae9e6372664e6a3dbafed4ec5a9c8111a3d7e3cd
 
 [HW21 作業連結](/homeworks/week21)
->>>>>>> 568f37e1eaa00ca8537692095ce8c75397ec0718
 
 #### 自我檢測
 
@@ -820,13 +813,6 @@ React 在 2019 年 2 月推出 v16.8 這個版本，做了一個很大的改動�
 
 #### 自我檢測
 
-<<<<<<< HEAD
-- [ ] 我熟悉 React 的基本使用
-- [ ] 我知道如何使用 React Router
-- [ ] 我了解 React Router 的目的
-- [ ] 我知道什麼是 Single Page Application
-- [ ] 我理解現在的前端與以往的差別
-=======
 - [ ] P1 我熟悉 React 的基本使用
 - [ ] P1 我知道如何使用 React Router 
 - [ ] P1 我了解 React Router 的目的
@@ -835,7 +821,6 @@ React 在 2019 年 2 月推出 v16.8 這個版本，做了一個很大的改動�
 - [ ] P1 我知道 class component 與 function component 的差異
 - [ ] P1 我知道 class component 的各個 lifecycle
 - [ ] P2 我知道每一個 hook 大概是在做什麼
->>>>>>> ae9e6372664e6a3dbafed4ec5a9c8111a3d7e3cd
 
 ### 第二十三週（11/16 ~ 11/22）：前端框架（三）
 
@@ -879,6 +864,7 @@ React 在 2019 年 2 月推出 v16.8 這個版本，做了一個很大的改動�
 ### 第二十五週（11/30 ~ 12/06）：Final Project
 
 ### 第二十六週（12/07 ~ 12/13）：Final Project
+
 
 # Final Project
 
