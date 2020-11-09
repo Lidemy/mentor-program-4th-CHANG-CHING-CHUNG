@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/React-five-in-a-row/static/css/main.af280bd4.chunk.css",
+    "main.js": "/React-five-in-a-row/static/js/main.9762be5f.chunk.js",
+    "main.js.map": "/React-five-in-a-row/static/js/main.9762be5f.chunk.js.map",
+    "runtime-main.js": "/React-five-in-a-row/static/js/runtime-main.7a090f22.js",
+    "runtime-main.js.map": "/React-five-in-a-row/static/js/runtime-main.7a090f22.js.map",
+    "static/js/2.99820802.chunk.js": "/React-five-in-a-row/static/js/2.99820802.chunk.js",
+    "static/js/2.99820802.chunk.js.map": "/React-five-in-a-row/static/js/2.99820802.chunk.js.map",
+    "index.html": "/React-five-in-a-row/index.html",
+    "static/css/main.af280bd4.chunk.css.map": "/React-five-in-a-row/static/css/main.af280bd4.chunk.css.map",
+    "static/js/2.99820802.chunk.js.LICENSE.txt": "/React-five-in-a-row/static/js/2.99820802.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a090f22.js",
+    "static/js/2.99820802.chunk.js",
+    "static/css/main.af280bd4.chunk.css",
+    "static/js/main.9762be5f.chunk.js"
+  ]
+}
