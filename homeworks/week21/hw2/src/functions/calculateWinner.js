@@ -11,54 +11,54 @@ function loopCheckingMarks(
   const map = JSON.parse(JSON.stringify(oldMap));
   while (
     y + counter <= ROW_MAX_LENGTH &&
-    squares[x][y + counter] === playerMark
+    squares[x][y + counter].mark === playerMark
   ) {
-    map.rowRight.push(squares[x][y + counter]);
+    map.rowRight.push(squares[x][y + counter].mark);
     counter++;
   }
   counter = 1;
-  while (y - counter >= 0 && squares[x][y - counter] === playerMark) {
-    map.rowLeft.push(squares[x][y - counter]);
+  while (y - counter >= 0 && squares[x][y - counter].mark === playerMark) {
+    map.rowLeft.push(squares[x][y - counter].mark);
     counter++;
   }
   counter = 1;
   while (
     x + counter <= COL_MAX_LENGTH &&
-    squares[x + counter][y] === playerMark
+    squares[x + counter][y].mark === playerMark
   ) {
-    map.colDown.push(squares[x + counter][y]);
+    map.colDown.push(squares[x + counter][y].mark);
     counter++;
   }
   counter = 1;
-  while (x - counter >= 0 && squares[x - counter][y] === playerMark) {
-    map.colUp.push(squares[x - counter][y]);
+  while (x - counter >= 0 && squares[x - counter][y].mark === playerMark) {
+    map.colUp.push(squares[x - counter][y].mark);
     counter++;
   }
   counter = 1;
   while (
     x - counter >= 0 &&
     y - counter >= 0 &&
-    squares[x - counter][y - counter] === playerMark
+    squares[x - counter][y - counter].mark === playerMark
   ) {
-    map.upperLeft.push(squares[x - counter][y - counter]);
+    map.upperLeft.push(squares[x - counter][y - counter].mark);
     counter++;
   }
   counter = 1;
   while (
     x - counter >= 0 &&
     y + counter <= ROW_MAX_LENGTH &&
-    squares[x - counter][y + counter] === playerMark
+    squares[x - counter][y + counter].mark === playerMark
   ) {
-    map.upperRight.push(squares[x - counter][y + counter]);
+    map.upperRight.push(squares[x - counter][y + counter].mark);
     counter++;
   }
   counter = 1;
   while (
     x + counter <= COL_MAX_LENGTH &&
     y + counter <= ROW_MAX_LENGTH &&
-    squares[x + counter][y + counter] === playerMark
+    squares[x + counter][y + counter].mark === playerMark
   ) {
-    map.bottomRight.push(squares[x + counter][y + counter]);
+    map.bottomRight.push(squares[x + counter][y + counter].mark);
     counter++;
   }
   counter = 1;
@@ -66,9 +66,9 @@ function loopCheckingMarks(
   while (
     x + counter <= COL_MAX_LENGTH &&
     y - counter >= 0 &&
-    squares[x + counter][y - counter] === playerMark
+    squares[x + counter][y - counter].mark === playerMark
   ) {
-    map.bottomLeft.push(squares[x + counter][y - counter]);
+    map.bottomLeft.push(squares[x + counter][y - counter].mark);
     counter++;
   }
 
@@ -76,12 +76,12 @@ function loopCheckingMarks(
 }
 
 function calculateWinner(squares, x, y) {
-  if (squares[x][y] === null) {
+  if (squares[x][y].mark === null) {
     return;
   }
   const COL_MAX_LENGTH = squares[0].length - 1;
   const ROW_MAX_LENGTH = squares.length - 1;
-  const playerMark = squares[x][y];
+  const playerMark = squares[x][y].mark;
   let counter = 1;
   const map = {
     rowRight: [],

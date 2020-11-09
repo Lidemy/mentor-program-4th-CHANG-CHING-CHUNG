@@ -33,7 +33,7 @@ ul {
   float: left;
   font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
+  line-height: 24px;
   height: 34px;
   margin-right: -1px;
   margin-top: -1px;
@@ -115,4 +115,12 @@ footer {
   bottom: 0px;
   width: 100%;
   display: block;
+}
+.white-step {
+  color: #fff;
+  font-size: 18px;
+}
+.black-step {
+  color: #333;
+  font-size: 18px;
 }

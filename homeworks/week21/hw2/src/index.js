@@ -5,12 +5,20 @@ import calculateWinner from "./functions/calculateWinner";
 import html2canvas from "html2canvas";
 import { saveAs } from "file-saver";
 
-function Square({ value, onClick }) {
+function Square({ value, winner, onClick }) {
   let chess;
-  if (value === "X") {
-    chess = <div className={"black "}></div>;
-  } else if (value === "O") {
-    chess = <div className={"white "}></div>;
+  if (value.mark === "X") {
+    chess = (
+      <div className={"black "}>
+        {winner ? <span class="white-step">{value.step}</span> : null}
+      </div>
+    );
+  } else if (value.mark === "O") {
+    chess = (
+      <div className={"white "}>
+        {winner ? <span class="black-step">{value.step}</span> : null}
+      </div>
+    );
   }
   return (
     <button className="square" onClick={() => onClick()}>
@@ -24,6 +32,7 @@ function Board(props) {
     return (
       <Square
         value={props.squares[rowNum][i]}
+        winner={props.winner}
         onClick={() => props.onClick(rowNum, i)}
       />
     );
@@ -50,7 +59,7 @@ function Game() {
   const [state, setState] = useState({
     history: [
       {
-        squares: Array(19).fill(Array(19).fill(null)),
+        squares: Array(19).fill(Array(19).fill({ mark: "", step: 0 })),
       },
     ],
     stepNumber: 0,
@@ -60,10 +69,13 @@ function Game() {
     const history = state.history.slice(0, state.stepNumber + 1);
     const current = history[history.length - 1];
     const newSquares = JSON.parse(JSON.stringify(current.squares));
-    if (winner || newSquares[j][i]) {
+    if (winner || newSquares[j][i].mark) {
       return;
     }
-    newSquares[j][i] = state.xIsNet ? "X" : "O";
+    newSquares[j][i] = {
+      mark: state.xIsNet ? "X" : "O",
+      step: state.stepNumber + 1,
+    };
     x = j;
     y = i;
     setState({
@@ -136,6 +148,7 @@ function Game() {
         <div className="game-board">
           <Board
             squares={current.squares}
+            winner={winner}
             onClick={(rowNum, i) => handkeClick(rowNum, i)}
           />
         </div>
