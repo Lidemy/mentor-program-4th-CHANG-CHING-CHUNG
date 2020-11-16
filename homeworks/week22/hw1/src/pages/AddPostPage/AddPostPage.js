@@ -36,7 +36,12 @@ export default function AddPostPage() {
       </div>
       <div>
         body:
-        <input value={body} onChange={(e) => setBody(e.target.value)} />
+        <textarea
+          cols="50"
+          rows="20"
+          value={body}
+          onChange={(e) => setBody(e.target.value)}
+        />
       </div>
       <button>發布</button>
       {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
