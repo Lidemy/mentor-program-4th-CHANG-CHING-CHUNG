@@ -1,28 +1,34 @@
 import { getAuthToken } from "./utils";
 const BASE_URL = "https://student-json-api.lidemy.me";
+export const LINK_URL =
+  "https://student-json-api.lidemy.me/posts?_page=1&_limit=5&_sort=createdAt&_order=desc";
 
 export const getPosts = () => {
   return fetch(`${BASE_URL}/posts?_sort=createdAt&_order=desc`).then((res) =>
     res.json()
   );
 };
-export const getPostsByLimit = (URL) => {
-  return fetch(URL).then(async (res) => {
-    let links = res.headers
-      .get("link")
-      .replace(/\</gi, "")
-      .replace(/\>/gi, "")
-      .split(",");
-    const posts = await res.json();
-    links = links.map((link) => {
-      const newLink = link.replace(/http/, "https").replace(/ /, "").split(";");
-      return newLink;
-    });
-    return {
-      links,
-      posts,
-    };
+
+export const getPostsByLimit = async (URL) => {
+  const res = await fetch(URL);
+  const { headers } = res;
+  const posts = await res.json();
+
+  let links = headers
+    .get("link")
+    .replace(/\</gi, "")
+    .replace(/\>/gi, "")
+    .split(",");
+
+  links = links.map((link) => {
+    const newLink = link.replace(/http/, "https").replace(/ /, "").split(";");
+    return newLink;
   });
+
+  return {
+    links,
+    posts,
+  };
 };
 
 export const getTotalCountOfPosts = () => {

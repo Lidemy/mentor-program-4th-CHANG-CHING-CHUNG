@@ -28,6 +28,8 @@ function App() {
         if (res.ok) {
           setIsLoading(false);
           setUser(res.data);
+        } else {
+          setIsLoading(false);
         }
       });
     } else {

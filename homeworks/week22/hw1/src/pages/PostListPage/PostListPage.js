@@ -3,7 +3,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 import { Link } from "react-router-dom";
-import { getPostsByLimit, getTotalCountOfPosts } from "../../WebApi";
+import { getPostsByLimit, getTotalCountOfPosts, LINK_URL } from "../../WebApi";
 
 const Root = styled.div`
   width: 80%;
@@ -50,9 +50,7 @@ Post.propTypes = {
 export default function PostListPage() {
   const [posts, setPosts] = useState([]);
   const [totalCount, setTotalCount] = useState("");
-  const [link, setLink] = useState(
-    "https://student-json-api.lidemy.me/posts?_page=1&_limit=5&_sort=createdAt&_order=desc"
-  );
+  const [link, setLink] = useState(LINK_URL);
   const [links, setLinks] = useState([]);
   useEffect(() => {
     getPostsByLimit(link).then((posts) => {
