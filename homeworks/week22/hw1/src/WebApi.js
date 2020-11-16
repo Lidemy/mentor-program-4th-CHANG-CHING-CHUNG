@@ -15,7 +15,7 @@ export const getPostsByLimit = (URL) => {
       .split(",");
     const posts = await res.json();
     links = links.map((link) => {
-      const newLink = link.replace(/ /, "").split(";");
+      const newLink = link.replace(/http/, "https").replace(/ /, "").split(";");
       return newLink;
     });
     return {
