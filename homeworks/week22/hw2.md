@@ -1,4 +1,3 @@
-
 ## 請列出 React 內建的所有 hook，並大概講解功能是什麼
 1. useState: 用來處理元件內跟元件相關的反應式資料，這個 hook 會回傳一個狀態值以及一個用來更新壯態的函式。
 2. useEffect: 主要用來監聽某個值，並且隨者值的改變，執行函式，可用在"登入"、"畫面渲染後的抓取遠端資料"或"畫面渲染前的資料處理"等等。 
@@ -65,4 +64,3 @@
    的，但在大部份情況下，做好還是使用 controlled component。
 
 資料來源: [controlled-vs-uncontrolled-inputs-react](https://goshakkk.name/controlled-vs-uncontrolled-inputs-react/#conclusion)
-
